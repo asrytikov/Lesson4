@@ -1,3 +1,5 @@
+package p1;
+
 public class Main {
     public static void main(String[] args) {
         Person person = new Person();
@@ -13,6 +15,10 @@ public class Main {
 
         Person person2 = new Person("Alex", 25);
         person2.info();
+
+        Programmist programmist = new Programmist("James");
+        programmist.isProgramming = true;
+        programmist.info();
 
     }
 }

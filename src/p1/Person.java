@@ -1,3 +1,5 @@
+package p1;
+
 public class Person {
 
     String name;
@@ -13,16 +15,18 @@ public class Person {
     Person(){
     }
 
-    Person(String n){
+    public Person(String n){
         name = n;
         age = 2;
+        System.out.println(name + " "+ age);
+
     }
     Person(String n, int a){
         name = n;
         age = a;
     }
 
-    void info(){
+    public void info(){
         System.out.printf("Name: %s \tAge: %d\n", name, age);
     }
 
